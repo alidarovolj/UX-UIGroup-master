@@ -65,3 +65,22 @@ body {
 .second p {
   margin: 0;
 }
+
+p::first-letter {
+  color: red;
+}
+
+.display .singleDisplay:nth-child(1) {
+  background: red;
+}
+
+.display .singleDisplay:nth-last-child(1) {
+  background: blue;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-weight: 900;
+    color: green;
+  }
+}

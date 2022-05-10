@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 
 body {
@@ -54,6 +55,11 @@ body {
   margin-bottom: 0;
 }
 
+h3:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .singleDisplay .first h3 {
   font-size: 15px;
 }
@@ -81,6 +87,30 @@ p::first-letter {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.pos {
+  bottom: 30px;
+  right: 30px;
+  background: #45e862;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: fixed;
+}
+
+.pos i {
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rel {
+  position: relative;
+  width: fit-content;
 }
 
 @media (max-width: 600px) {

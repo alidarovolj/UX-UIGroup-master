@@ -131,6 +131,16 @@ p::first-letter {
   background: rgba(0, 0, 0, 0.3);
   left: 0;
   top: 0;
+  z-index: 5;
+}
+
+.singleDisplay:hover .pseudoHover::before {
+  content: 'block';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #fff;
+  z-index: 10;
 }
 
 @media (max-width: 600px) {
